@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.active {
-  background: #BFDBFE;
-  color: #1E40AF;
+body {
+  background-color: #09090B;
+  color: #D4D4D8;
+}
+.active { 
+  color: #35C0A2;
 }
