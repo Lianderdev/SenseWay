@@ -7,9 +7,9 @@ import logo from "../../assets/logo.png"
 
 export function Dashboard() {
     return (
-        <aside className="w-[300px] h-screen text-zinc-950 border-r-[1px] border-zinc-900 px-2 ">
-            <div className="flex justify-between items-center -ml-3 mt-4 mr-2 p-2 bg-zinc-900 rounded-lg">
-                <div className="w-8 h-8">
+        <aside className="w-[300px] h-screen text-zinc-950  px-2 ">
+            <div className="flex justify-between items-center -ml-3 mt-2 mr-2 p-2 bg-zinc-900 rounded-lg">
+                <div className="w-7 h-7">
                     <img src={logo} alt="" className="object-contain"/>
                 </div>
                 <div className="text-xl text-zinc-700 rounded-full border-2 border-zinc-700 outline-1 outline-gray-600">

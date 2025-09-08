@@ -1,15 +1,15 @@
 export function Maps() {
     return (
         <div>
-            <div className="flex justify-between items-center">
-                <h2>Mapa</h2>
+            <div className="flex items-center">
+                <h2 className="text-2xl">Mapa / </h2>
 
-                <div className="flex items-center gap-2 bg-gray-100 rounded-full pl-2 pr-4">
-                    <div className="relative h-4 w-4">
+                <div className="flex items-center gap-2 rounded-full pl-2 pr-4">
+                    <div className="relative h-2 w-2  mt-2 ">
                         <span className="absolute inset-0 rounded-full bg-green-500/30 animate-ping" />
-                        <span className="absolute inset-0 rounded-full bg-green-500 shadow-lg" />
+                        <span className="absolute inset-0 rounded-full bg-green-500 shadow-xl" />
                     </div>
-                    <p className="text-xl">Indicador</p>
+                    <p className="text-base text-zinc-400 mt-2 italic">Indicador</p>
                 </div>
             </div>
             <div className="mt-4 w-[450px] h-[250px] border-4 border-zinc-900 text-lg text-zinc-300">
