@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import api from "./services/api"; // IMPORTA A API CENTRALIZADA
 import { Dashboard } from "./components/dashboard";
 import { History } from "./components/history";
 import { Maps } from "./components/maps";
@@ -10,15 +11,11 @@ export function App() {
   useEffect(() => {
     async function fetchLastLocation() {
       try {
-        const res = await fetch("http://localhost:3001/location/last");
-        if (!res.ok) {
-          throw new Error("Erro na resposta da API");
-        }
-        const data = await res.json();
-        setLastLocation(data);
+        const res = await api.get("/location/last"); // ALTERADO PARA API ONLINE
+        setLastLocation(res.data);
       } catch (err) {
         console.log("Erro ao carregar dados:", err);
-        setLastLocation(null); // garante reset se der erro
+        setLastLocation(null);
       }
     }
 

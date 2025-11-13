@@ -1,18 +1,17 @@
 import { useState, useEffect } from "react";
+import api from "../../services/api"; // IMPORTA A API 🔥
 
 export function History() {
-  const [dados, setDados] = useState([]); 
-  const [loading, setLoading] = useState(true); 
+  const [dados, setDados] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-   
-    fetch("http://localhost:3001/location/history")
-      .then((res) => res.json())
-      .then((data) => {
-       
-        const formattedData = data.map(item => ({
+    api
+      .get("/location/history") // AGORA USA A API AUTOMATICAMENTE
+      .then((res) => {
+        const formattedData = res.data.map((item) => ({
           dataHora: `${item.date} ${item.time}`,
-          comodo: item.room
+          comodo: item.room,
         }));
         setDados(formattedData);
         setLoading(false);

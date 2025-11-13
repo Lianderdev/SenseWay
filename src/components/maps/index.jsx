@@ -1,7 +1,7 @@
 // Maps.jsx
 export function Maps({ currentRoom }) {
   const indicatorPositions = {
-    "Sala de Estar": { bottom: "-2px", right: "4px" },
+    "Sala": { bottom: "-2px", right: "4px" },
     "Quarto": { bottom: "-2px", left: "4px" },
     "Cozinha": { bottom: "-4px", right: "6px" },
     "Banheiro": { bottom: "14px", right: "-2px" },
@@ -27,7 +27,7 @@ export function Maps({ currentRoom }) {
         <div className="flex h-[50%]">
           <div className="border-b-4 border-r-4 border-zinc-900 w-[60%] flex items-center justify-center relative">
             Sala de Estar
-            {currentRoom === "Sala de Estar" && (
+            {currentRoom === "Sala" && (
               <div
                 className="absolute w-5 h-5 bg-green-500 rounded-full animate-pulse"
                 style={{ bottom: position.bottom, right: position.right }}
