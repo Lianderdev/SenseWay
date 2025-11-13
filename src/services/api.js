@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://centerbeam.proxy.rlwy.net:38562",
+  baseURL: "https://senseway-api-v2-production.up.railway.app",
 });
 
 export default api;
