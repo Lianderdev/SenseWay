@@ -50,12 +50,12 @@ export function History() {
             {dados.map((item, index) => (
               <tr
                 key={index}
-                className="hover:bg-zinc-700 text-xl border-x border-zinc-900"
+                className="text-xl border-x"
               >
-                <td className="px-4 py-2 border-b border-zinc-900 text-lg font-medium">
+                <td className="px-4 py-2 border-b text-lg font-medium">
                   {item.dataHora}
                 </td>
-                <td className="px-4 py-2 border-b border-zinc-900 text-lg font-medium">
+                <td className="px-4 py-2 border-b text-lg font-medium">
                   {item.comodo}
                 </td>
               </tr>
