@@ -19,13 +19,13 @@ export function Maps({ currentRoom }) {
             <span className="absolute inset-0 rounded-full bg-green-500/30 animate-ping" />
             <span className="absolute inset-0 rounded-full bg-green-500 shadow-xl" />
           </div>
-          <p className="text-base text-zinc-400 mt-2 italic">Indicador</p>
+          <p className="text-base mt-2 italic">Indicador</p>
         </div>
       </div>
 
-      <div className="mt-4 w-[450px] h-[250px] border-4 border-zinc-900 text-lg text-zinc-300 relative">
+      <div className="mt-4 w-[450px] h-[250px] border-4 text-lg relative">
         <div className="flex h-[50%]">
-          <div className="border-b-4 border-r-4 border-zinc-900 w-[60%] flex items-center justify-center relative">
+          <div className="border-b-4 border-r-4 w-[60%] flex items-center justify-center relative">
             Sala de Estar
             {currentRoom === "Sala" && (
               <div
@@ -35,7 +35,7 @@ export function Maps({ currentRoom }) {
             )}
           </div>
 
-          <div className="border-b-4 w-[40%] border-zinc-900 flex items-center justify-center relative">
+          <div className="border-b-4 w-[40%] flex items-center justify-center relative">
             Quarto
             {currentRoom === "Quarto" && (
               <div
@@ -47,7 +47,7 @@ export function Maps({ currentRoom }) {
         </div>
 
         <div className="flex h-[50%]">
-          <div className="border-r-4 w-[70%] border-zinc-900 flex items-center justify-center relative">
+          <div className="border-r-4 w-[70%] flex items-center justify-center relative">
             Cozinha
             {currentRoom === "Cozinha" && (
               <div

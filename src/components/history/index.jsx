@@ -29,18 +29,18 @@ export function History() {
   return (
     <div>
       <div className="mt-6">
-        <h2 className="text-2xl font-medium tracking-tight text-zinc-300 w-full pt-6">
+        <h2 className="text-2xl font-medium tracking-tight w-full pt-6">
           Histórico
         </h2>
       </div>
       <div>
-        <table className="w-full border-collapse mt-4">
-          <thead className="bg-zinc-900 text-2xl">
+        <table className="w-full border border-collapse mt-4">
+          <thead className="text-2xl">
             <tr>
-              <th className="px-4 py-2 text-lg text-left font-medium text-gray-200 rounded-tl-xl">
+              <th className="px-4 py-2 text-lg text-left font-medium rounded-tl-xl">
                 Data/Hora
               </th>
-              <th className="px-4 py-2 text-lg text-left font-medium text-gray-200 rounded-tr-xl">
+              <th className="px-4 py-2 text-lg text-left font-medium rounded-tr-xl">
                 Cômodo
               </th>
             </tr>
@@ -52,10 +52,10 @@ export function History() {
                 key={index}
                 className="hover:bg-zinc-700 text-xl border-x border-zinc-900"
               >
-                <td className="px-4 py-2 border-b border-zinc-900 text-lg font-medium text-zinc-700">
+                <td className="px-4 py-2 border-b border-zinc-900 text-lg font-medium">
                   {item.dataHora}
                 </td>
-                <td className="px-4 py-2 border-b border-zinc-900 text-lg font-medium text-zinc-700">
+                <td className="px-4 py-2 border-b border-zinc-900 text-lg font-medium">
                   {item.comodo}
                 </td>
               </tr>
